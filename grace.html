@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livre d'anniversaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cormorant+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --gold: #FFD700;
+            --gold-light: #FFE55C;
+            --deep-blue: #090863;
+            --mauve: #A78AFF;
+            --rose: #E6B8B8;
+            --cream: #FFF5E6;
+            --text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        body {
+            background: var(--deep-blue);
+            margin: 0;
+            padding: 0;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--cream);
+        }
+        
+        .book {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .page {
+            width: 50%;
+            min-height: 600px;
+            padding: 2rem;
+            box-sizing: border-box;
+            position: relative;
+            border: 2px solid var(--gold);
+            margin-bottom: 2rem;
+            background: rgba(255, 245, 230, 0.1);
+        }
+        
+        .photo-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .text-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .photo-frame {
+            border: 12px double var(--gold);
+            border-radius: 4px;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+        }
+        
+        .photo-frame img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        
+        .gold-text {
+            color: var(--gold);
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            text-shadow: var(--text-shadow);
+        }
+        
+        .editable {
+            color: var(--cream);
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.15);
+            border-left: 2px solid var(--gold);
+        }
+        
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            color: var(--gold);
+            font-size: 2rem;
+            margin-top: 2rem;
+            text-align: right;
+        }
+        
+        .decoration {
+            position: absolute;
+            font-size: 2rem;
+            color: var(--gold-light);
+            opacity: 0.4;
+            pointer-events: none;
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="book">
+        <!-- PAGES 1-2 -->
+        <div class="page photo-page">
+            <div class="photo-frame"><img src="IMG_20240324_230442.jpg" alt="Souvenir 1"></div>
+            <div class="decoration" style="top:10px; left:10px;">✨</div>
+            <div class="decoration" style="bottom:10px; right:10px;">❤️</div>
+            <div class="page-number">Page 1</div>
+        </div>
+        <div class="page text-page">
+            <h2 class="gold-text">Friend</h2>
+            <p class="editable">Je ne saurai dire quand est-ce que nous sommes devenus amis, ça s'est fait instantanément, un peu comme le coup du destin🤭 Parmis les amis que j'ai eu et que j'ai, personne ne me ressemble autant, c'est pourquoi j'ai eu à te surnommer une
+                fois Jumeau. Un ami avec les mêmes comportements que moi, attitudes, et perceptions des choses, bien que l'on soit de sexe opposé. le temps passé me manque, tu te rappelles quand on faisait des blagues un peu sombres, c'était genial, vraiment
+                à jamais dans ma mémoire. Aujourd'hui, on a grandi et beaucoup de choses ont changé mais bon, on ne peut tout jeter à la poubelle. En ce jour d'anniversaire, je viens te rappeler à quel point t'es un bon ami, pas seulement avec moi mais
+                avec les autres fin d'après mes remarques. J'avoue que je n'ai pas été facile à vivre mais t'as sû faire avec, je n'ai pas non plus été la meilleure de pote ces derniers temps, sorry. Tu t'en es quand même bien sorti, très ravie Heureux
+                anniversaire My Friend, Jumeau, Le frère Gloire🙂‍↔️😁
+            </p>
+            <p class="signature">— Glory</p>
+            <div class="decoration" style="top:20px; right:20px;">🌟</div>
+            <div class="decoration" style="bottom:20px; left:30px;">💫</div>
+            <div class="page-number">Page 2</div>
+        </div>
+
+        <!-- PAGES 3-4 -->
+        <div class="page photo-page">
+            <div class="photo-frame"><img src="IMG-20230731-WA0088.jpg" alt="Souvenir 2"></div>
+            <div class="decoration" style="top:15px; left:20px;">🙇‍♂️</div>
+            <div class="decoration" style="bottom:15px; right:25px;">🙏</div>
+            <div class="page-number">Page 3</div>
+        </div>
+        <div class="page text-page">
+            <h2 class="gold-text">Homme de Dieu</h2>
+            <p class="editable">Tu l'ignores peut-être mais le côté qui m'a le plus attiré chez toi, c'est ce côté de serviteur de Dieu. Tu sais, c'est tellemnt bien et bon d'avoir un Homme de Dieu dans son entourage, je ne sais pas pour les autres mais ça fortifie. Je crois
+                t'avoir entendu prêcher que quelques fois fin pas plus de 5 fois mais j'ai aimé, surtout que t'es l'homme de la parole, déjà que tu parles de manière charmant, associé à l'Esprit ça l'est encore plus. N'abandonnes pas ce côté, pas seulement
+                pour moi, mais pour ce peuple qui a besoin de cette grâce deversée sur toi pour être béni, recevoir Christ,... Le travail et plusieurs problèmes peuvent intervenir, mais je suis certaine au fond de moi que tu peux trouver l'équilibre qu'il
+                faut pour avancer. un peu partage de sa méditation quotidenne fait du bien l'homme de Dieu anniversaireux 🤭🎂 Béni sois tu HD
+            </p>
+            <p class="signature">— Me</p>
+            <div class="decoration" style="top:10px; right:30px;">📖🤩</div>
+            <div class="decoration" style="bottom:25px; left:20px;">✨</div>
+            <div class="page-number">Page 4</div>
+        </div>
+
+        <!-- PAGES 5-6 -->
+        <div class="page photo-page">
+            <div class="photo-frame"><img src="DIVERGENT.png" alt="Souvenir 3"></div>
+            <div class="decoration" style="top:20px; left:15px;">☀️</div>
+            <div class="decoration" style="bottom:15px; right:20px;">❤️‍🔥</div>
+            <div class="page-number">Page 5</div>
+        </div>
+        <div class="page text-page">
+            <h2 class="gold-text">Divergent Empire</h2>
+            <p class="editable">Quand je regarde en arrière et que je regarde devant moi; je vois un Homme nouveau. A l'époque, tu voulais tout lâcher et en même temps tu travaillais comme un malade, non stop, toujours au boulot. Un homme comme toi,je savais bien qu'il ne
+                pourrait pas laisser tomber. Parfois dans la vie, on a tellement donner l'impression d'être inébranlable que les gens oublient que l'on est aussi humain et qu'il nous arrive de faiblir. Tu es arrivé à ce niveau en gardant le cap pour aller
+                loin; pour tout te dire, t'es un homme brillant, t'as appris tout seul. T'es un modèle franchement, je suis fière en tout cas, mais tu sais de temps en temps, il n'est pas interdit de jouir un peu de notre gain; comme par exemple aller
+                manger quelque part ou s'acheter des vêtements, je dis ça juste pour ne pas travailler encore et encore sans pourtant jouir de ton travail. OUI, le chemin est encore long mais de temps en temps. Navrée de n'avoir pas tant partcipée à tout
+                ça, gérer la pression du boulot n'a jamais été facile surtout que la pression pour toi n'est pas facile à surmonter; mais laisses moi te dire que tu t'en es sorti comme un chef. Heureux anniversaire Mister Divergent 🎂🥰
+            </p>
+            <p class="signature">— Avec tendresse</p>
+            <div class="decoration" style="top:15px; right:25px;">🌈💭</div>
+            <div class="decoration" style="bottom:20px; left:25px;">🕊️💻</div>
+            <div class="page-number">Page 6</div>
+        </div>
+
+        <!-- PAGES 7-8 -->
+        <div class="page photo-page">
+            <div class="photo-frame"><img src="IMG-20240624-WA0057.jpg" alt="Souvenir 4"></div>
+            <div class="decoration" style="top:10px; left:10px;">⭐💕</div>
+            <div class="decoration" style="bottom:10px; right:10px;">❤️</div>
+            <div class="page-number">Page 7</div>
+        </div>
+        <div class="page text-page">
+            <h2 class="gold-text">FOREVER</h2>
+            <p class="editable">Comme tu le sais, à nos débuts, je n'y croyais pas vraiment à cette histoire entre nous, mais le temps a fini par me donner raison à sa manière. Tout début est chic, top et tout; tous ces moments passés entre nous ne quittent jamais mon esprit
+                surtout ces derniers temps, ce plaisir de câlins silencieux, des appels où seulement l'un au bout du fil parle,fin tout le reste. Depuis mon envol vers un autre cieux que le tien, les choses ne se sont pas bien passées, problème après
+                problème, j'ai même perdue une amie dans tout ça mais ce n'est pas le sujet. l'eloignement et tout le reste; en ce moment, fin j'ai eu à réagir comme toi lorsque j'ai eu à changer d'attitudes à causes de mes problèmes, la même attitude
+                que je n'ai pas aimé, c'est ce que j'ai adopté en quelque sorte. je n'ai pas essayé de comprendre ton changement d'attitudes soudain, j'ai juste critiquer et sans t'aider, et j'en suis navrée; et dans mes explication, te conaissant, je
+                devrais m'expliquer mieux mais je ne l'ai pas fait desolée, je ne peux te changer pour que tu sois comme je le voudrais mais je peux m'adapter et chercher à faire sortir la meilleure version cachée de toi. En quelques mots, je peux dire
+                que tu as été le meilleur de copain, partenaire de vie, toujours voir l'avenir, et essayer de garder le cap, c'est un bon point. Peut-être que ces derniers temps j'ai eu à pousser ta personne au bout par mon attitude, franchement si c'est
+                le cas, je suis vraiment d&sol&e de n'avoir pas étét à la hauteur, Et pour tout te dire, je suis toujours prête à me plier en 4 pour être une meilleure partenaire de vie pour toi, sauf que, malgré ce qui a bien pu se passer, le fait que
+                tu ignores mes larmes comme la dernière fois a tout brisé, ça m'a brisé moi, mes rêves, la force, tout, je n'arrive plus à penser à un avenir avec celui qui a eu une telle réaction face à mes pleurs, déjà que lorsque j'étais dans des moments
+                difficiles tu m'as laissée seule pur que j'apprenne à être forte, toute seule....C'était mon idée de me retirer mais tu m'as laissé m'en sortir seule et quand je suis revenue, c'etait avec presque avec indignation que j'étais reçu j'avais
+                pris sur moi, bien que ça m'avait fait du mal, mais là ça m'a achevé, je n'ai peut-être pas été à la hauteur, désolé Forever, t'as tout le droit d'être heureux et c'est ce que je te souhaite vraiment, Heureux anniversaire 🎂💕
+
+
+            </p>
+            <p class="signature">— Pour moi après l'amour, c'est l'amour (peu importe sous quel forme) </p>
+            <div class="decoration" style="top:20px; right:20px;">✍️</div>
+            <div class="decoration" style="bottom:20px; left:20px;">📖</div>
+            <div class="page-number">Page 8</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
